@@ -1,0 +1,33 @@
+Modules
+A module is another name of a python file with code in it
+python allows you to use one module within another Modules
+
+waits to import a module
+import [module_name]
+example
+import math
+math.pow(2, 3)
+ 
+should always have your import modules at the very top of your code
+
+another module is the random module
+
+import random
+random.ranint(0,100)
+- will return a random number between the two values
+
+Built statistic module
+import statistics
+nums = [1, 5, 33, 12, 46, 33 ,2]
+
+statistics.mean(nums)
+statistics.median(nums)
+statistics.mode(nums)
+
+Use the built-in keyword module to check if a string is a pytthon keyword
+import keyword
+keyword.iskeyboard("for")
+ - returns True
+keyword.iskeyword("footabll")
+ - returns False
+

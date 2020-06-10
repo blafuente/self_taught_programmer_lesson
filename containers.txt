@@ -1,0 +1,102 @@
+Containers 
+Three types
+- Lists
+    - Obects stored in a specfic order. Stored in []
+- Tuples
+- Dictionaries
+-----------------------------------------------------------------------------------------------
+Lists
+There are two ways to create Lists
+ex.
+There are two ways to create Lists
+    fruit = lists() *built in function*
+    fruit = [] *with the brackets*
+
+fruit = ["Apple", "Orange", "Pear"]
+.append adds an item to the end of the lists
+fruit.append("Banana")
+fruit will now = ["Apple", "Orange", "Pear", "Banana"]
+
+Lists are mutable
+- you can add and remove items from a lists
+
+The method '.pop' removes the last item in the lists
+
+you can use addition operator '+' to add two lists together
+
+'in' keyword, checks if variable is in the lists.
+'not in' also checks if an item is not in the lists
+
+***************************************************************************************************
+
+Tuples
+Are similar to lists, store iteams in a specific order
+but are Immutable, cannot change and items within the tuple
+Are placed in paranthesis ()
+can be created two ways:
+- my_tuple = tuple() *built in function*
+- my_tuple = () *with paranthesis ()* 
+
+if a tuple only has one item, it still requires a comma (,)
+my_tuple = ("item1", )
+Even tho you cannot alter anything in a tuple, but you can pull from a tuple
+
+***************************************************************************************************
+
+Dictionaries
+You use Dictionaries to link one object to another. which is called mapping. 
+it creates a key:value pair. you can you look up a key to look up a value, but itsn't vice versa
+Dictionaries do not store data in order and is Immutable. 
+Dictionaries use curley brackets {}
+Dictionaries can you be created by two ways
+    - my_dict = dict() *built in function*
+    - my_dict = {}     *curley brackets*
+
+my_dict = {
+    key : value,
+    "Apple" : "Red",
+}
+adding items to Dictionaries
+my_dict["code"] = "fun"
+my_dict["Bill"] = "Gates"
+my_dict["founded"] = 1776
+
+You can delete a key:value pair with the keyword "del"
+del my_dict["founded"]
+
+example of Dictionaries
+rhymes = {
+    "1" : "fun",
+    "2" : "blue",
+    "3" : "me",
+    "4" : "floor",
+    "5" : "live
+}
+
+n = input("Type a number: ")
+if n in rhymes:
+    rhyme = rhymes[n]
+    print(rhyme)
+else:
+    print("Not Found.")
+
+
+***************************************************************************************************
+
+Store Containers in other Containers
+- lists within a lists
+- list within a tuple
+- tuple within a list
+- etc
+
+example: 
+locations = []
+
+la = (34.0522, 1888.2437)
+chicago = (41.8781, 87.6298)
+
+locations.append(la)
+locations.append(chicago)
+
+print locations
+
